@@ -1,0 +1,39 @@
+.ram {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.ram-word {
+  border-radius: 0.25em;
+}
+
+@keyframes ram-active {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #badbcc;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.ram-word.active {
+  animation-name: ram-active;
+  animation-duration: 0.5s;
+  border-color: #0f5132;
+}
+
+.ram-word.focus {
+  color: red;
+  outline: 3px solid red !important;
+}
+
+.ram-word:hover {
+  outline: 2px solid green;
+}
+
+.ram-word-prev .hex .opc {
+  color: yellow;
+}

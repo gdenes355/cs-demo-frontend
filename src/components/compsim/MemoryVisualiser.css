@@ -1,0 +1,25 @@
+.memory-vis {
+  font-family: monospace;
+}
+.memory-vis th {
+  border-right: solid 1px white;
+  border-left: solid 1px white;
+  border-bottom: solid 1px white;
+  text-align: center;
+}
+
+.memory-vis td {
+  border-right: solid 1px white;
+  border-left: solid 1px white;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.memory-vis th.unused {
+  color: #999;
+}
+
+.memory-vis td.unused {
+  color: #999;
+}

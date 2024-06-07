@@ -1,0 +1,37 @@
+.bus {
+  width: 195px;
+}
+.a-bus {
+  font-family: monospace;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.bus-reg {
+  color: black;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: monospace;
+}
+
+@keyframes bus-reg-changed {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.a-bus.active .bus-reg {
+  animation-name: bus-reg-changed;
+  animation-duration: 0.5s;
+}
+
+.a-bus.active {
+  border: 1px solid grey;
+}

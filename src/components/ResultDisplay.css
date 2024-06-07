@@ -1,0 +1,27 @@
+.resultDisplay {
+  min-width: 80px;
+  padding: 30px;
+  font-size: 2em;
+  float: right;
+  text-align: center;
+}
+
+@keyframes results-changed {
+  0% {
+    background-color: #d1e7dd;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: greenyellow;
+  }
+  100% {
+    background-color: #d1e7dd;
+  }
+}
+
+.resultDisplay.changed {
+  animation-name: results-changed;
+  animation-duration: 1s;
+}

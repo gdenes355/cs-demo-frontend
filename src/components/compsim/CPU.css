@@ -1,0 +1,93 @@
+.reg {
+  font-family: monospace;
+  border: 1px solid transparent;
+  border-radius: 0.25em;
+}
+
+.reg-value {
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+  margin: 0.1rem;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #fff;
+  margin-left: 20px;
+}
+
+@keyframes reg-address-changed {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #f5c2c7;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.reg.active.reg-address .reg-value {
+  animation-name: reg-address-changed;
+  animation-duration: 0.5s;
+}
+
+.reg.active.reg-address {
+  border-color: #842029;
+}
+
+@keyframes reg-data-changed {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #badbcc;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.reg.active.reg-data .reg-value {
+  animation-name: reg-data-changed;
+  animation-duration: 0.5s;
+}
+
+.reg.active.reg-data {
+  border-color: #0f5132;
+}
+
+@keyframes reg-control-changed {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #b6effb;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.reg.active.reg-control .reg-value {
+  animation-name: reg-control-changed;
+  animation-duration: 0.5s;
+}
+
+.reg.active.reg-control {
+  border-color: #055160;
+}
+
+.control-unit.decoding {
+  background-color: #b6effb;
+}
+
+.alu.alu-busy {
+  background-color: #ffecb5;
+}
+
+.reg .cmp-flag {
+  margin-right: 5px;
+}
