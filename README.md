@@ -1,4 +1,6 @@
 # Computer Science learning demos
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a4ab609-ce3f-426b-9319-356b99fcc907/deploy-status)](https://cs-demos.netlify.app/)
 
 ## Demos / endpoints:
 * `?gameid=binary`: GCSE number bases (hex->binary, binary addition, shifts, denary->binary)
