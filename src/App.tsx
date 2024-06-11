@@ -7,6 +7,7 @@ import ComputerSimulator from "./games/ComputerSimulator";
 import SortSearch from "./games/SortSearch";
 import NetworkMask from "./games/NetworkMask";
 import StrFormat from "./games/StrFormat";
+import WifiRadio from "./games/WifiRadio";
 
 function AppContainer() {
   const searchParams = new URLSearchParams(useLocation().search);
@@ -23,6 +24,8 @@ function AppContainer() {
     return <NetworkMask />;
   } else if (gameid === "str-format") {
     return <StrFormat />;
+  } else if (gameid === "radio") {
+    return <WifiRadio />;
   } else {
     return <BinaryGame />;
   }
